@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chính Sách Quyền Riêng Tư — Thời Khoá Biểu AI</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#555; --accent:#0b6bcb; --bg:#fff; --card:#f5f7fa; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         line-height: 1.7; color: var(--fg); background: var(--bg);
+         max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin-top: 36px; padding-top: 12px; border-top: 1px solid #e5e7eb; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .meta div { margin: 2px 0; }
+  .summary { background: var(--card); border-left: 4px solid var(--accent);
+             padding: 14px 18px; border-radius: 6px; margin: 16px 0 8px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); word-break: break-all; }
+  code { background: #f0f0f0; padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+  .footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid #e5e7eb;
+            color: var(--muted); font-size: 13px; }
+  strong { color: #000; }
+</style>
+</head>
+<body>
+
+<h1>Chính Sách Quyền Riêng Tư — Thời Khoá Biểu AI</h1>
+<div class="meta">
+  <div><strong>Cập nhật:</strong> 16/06/2026</div>
+  <div><strong>Áp dụng cho:</strong> Ứng dụng Thời Khoá Biểu AI trên Google Play, App Store</div>
+  <div><strong>Tên gói:</strong> <code>com.tran.thoikhoabieu</code></div>
+</div>
+
+<p>Ứng dụng Thời Khoá Biểu AI giúp học sinh, phụ huynh và giáo viên quản lý lịch học, lịch đưa đón, sự kiện, nhắc nhở, chụp ảnh thời khoá biểu để tự động nhận dạng, đọc lịch bằng giọng nói, và sử dụng trợ lý "Gia sư AI" để giải bài tập từ ảnh/PDF/văn bản.</p>
+
+<p>Chính sách này mô tả những loại dữ liệu ứng dụng thu thập, mục đích sử dụng, các bên thứ ba có thể xử lý dữ liệu, và quyền của bạn.</p>
+
+<h2>1. Tóm tắt nhanh</h2>
+<div class="summary">
+<ul>
+  <li><strong>Lịch học, tên con, sự kiện, ghi chú</strong> → chỉ lưu <strong>cục bộ trên thiết bị</strong> (SQLite), không tải lên máy chủ của chúng tôi.</li>
+  <li><strong>Ảnh thời khoá biểu / bài tập</strong> → gửi cho dịch vụ AI (Alibaba Model Studio Singapore) <strong>chỉ khi bạn chủ động bấm Giải / Đọc lịch</strong>, không lưu sau khi xử lý.</li>
+  <li><strong>Vị trí thiết bị (GPS)</strong> → <strong>KHÔNG</strong> thu thập. Thời tiết lấy theo tỉnh/thành bạn tự chọn trong Cài đặt.</li>
+  <li><strong>Quảng cáo</strong> (Google AdMob) → có hiển thị; đã ép chế độ <strong>an toàn cho trẻ em</strong> (không nhắm cá nhân, chỉ nội dung mức "G").</li>
+  <li><strong>Tài khoản</strong> → ứng dụng dùng đăng nhập ẩn danh Firebase (chỉ một mã ngẫu nhiên), bạn không phải đăng ký bằng email.</li>
+</ul>
+</div>
+
+<h2>2. Dữ liệu lưu cục bộ trên thiết bị</h2>
+<p>Ứng dụng lưu trên thiết bị bằng SQLite:</p>
+<ul>
+  <li>Vai trò (Học sinh / Phụ huynh / Giáo viên), tên hiển thị, ngôn ngữ, màu giao diện.</li>
+  <li>Tên con (do phụ huynh nhập), tên lớp (do giáo viên nhập).</li>
+  <li>Thời khoá biểu, lịch đưa đón, lịch dạy, sự kiện, lời nhắc.</li>
+  <li>Trạng thái: đã đi/đã đón/đã báo nghỉ/đã hoàn thành.</li>
+  <li>Số lượt đã dùng thử Gia sư AI và lượt scan AI (để áp giới hạn miễn phí).</li>
+  <li>Tỉnh/thành đã chọn cho thời tiết.</li>
+</ul>
+<p>Toàn bộ dữ liệu này <strong>không rời khỏi thiết bị</strong> trừ khi bạn chủ động bấm chia sẻ / xuất file.</p>
+
+<h2>3. Camera, ảnh, PDF</h2>
+<p>Ứng dụng dùng <strong>camera</strong> hoặc cho phép <strong>chọn ảnh/PDF</strong> khi bạn chủ động chụp/chọn để:</p>
+<ul>
+  <li>Nhận dạng thời khoá biểu (OCR chạy trên máy bằng Google ML Kit, <strong>không cần mạng</strong>).</li>
+  <li>Gửi cho dịch vụ Gia sư AI để giải bài tập <strong>chỉ sau khi bạn bấm "Giải bài"</strong>.</li>
+</ul>
+<p>Ứng dụng <strong>không</strong> truy cập toàn bộ thư viện ảnh và <strong>không</strong> đọc ảnh khi bạn không yêu cầu. Trước khi gửi ảnh cho AI, ứng dụng cho bạn cắt gọn vùng nội dung để loại phần thừa.</p>
+
+<h2>4. Vị trí</h2>
+<p>Ứng dụng <strong>KHÔNG xin quyền vị trí</strong> và <strong>không truy cập GPS / IP</strong>. Thời tiết hiển thị theo <strong>tỉnh/thành bạn tự chọn</strong> trong Cài đặt (mặc định Cần Thơ; có 34 tỉnh/thành Việt Nam).</p>
+
+<h2>5. Dịch vụ AI (Alibaba Model Studio Singapore)</h2>
+<p>Khi bạn dùng các tính năng có AI (Gia sư AI, AI đọc lịch khi OCR thất bại), ứng dụng gửi nội dung sau qua máy chủ Firebase Cloud Functions của chúng tôi (khu vực Singapore), rồi chuyển tiếp đến <strong>Alibaba Model Studio (máy chủ Singapore)</strong>:</p>
+<ul>
+  <li>Văn bản đề bài bạn gõ vào, hoặc</li>
+  <li>Ảnh/PDF bạn đã chủ động chọn để giải.</li>
+</ul>
+<p><strong>Cam kết của Alibaba Model Studio Singapore:</strong> không sử dụng dữ liệu API để huấn luyện mô hình. Chi tiết: <a href="https://www.alibabacloud.com/help/en/model-studio/">https://www.alibabacloud.com/help/en/model-studio/</a>.</p>
+<p>Dự phòng khi Alibaba lỗi tạm thời, ứng dụng có thể chuyển yêu cầu sang <strong>OpenAI (GPT-4o-mini)</strong>. OpenAI cũng không dùng dữ liệu API để huấn luyện: <a href="https://openai.com/policies/api-data-usage-policies">https://openai.com/policies/api-data-usage-policies</a>.</p>
+<p>Chúng tôi <strong>không lưu lâu dài</strong> nội dung bạn gửi cho AI; chỉ ghi log kỹ thuật ẩn danh (tổng số ký tự, mã định danh phiên) trong 30 ngày để chống lạm dụng.</p>
+
+<h2>6. Quảng cáo (Google AdMob)</h2>
+<p>Ứng dụng có hiển thị quảng cáo banner (đáy màn hình Lịch) và quảng cáo toàn màn hình thỉnh thoảng (sau khi giải xong bài tập). SDK Google AdMob có thể xử lý:</p>
+<ul>
+  <li>Mã định danh quảng cáo (Advertising ID) của thiết bị.</li>
+  <li>Dữ liệu chẩn đoán cơ bản (model thiết bị, phiên bản hệ điều hành).</li>
+  <li>Dữ liệu tương tác với quảng cáo (xem / bấm).</li>
+</ul>
+<p><strong>Chế độ an toàn cho trẻ em:</strong> chúng tôi đã đánh dấu ứng dụng là "hướng đến đối tượng có trẻ em" (<code>tagForChildDirectedTreatment = true</code>, <code>maxAdContentRating = G</code>), nên quảng cáo <strong>không</strong> được nhắm theo hồ sơ cá nhân.</p>
+<p>Người dùng đã mua gói trả phí (Gia sư AI hàng tháng/quý/năm) hoặc gói "Gỡ quảng cáo" sẽ <strong>không</strong> thấy quảng cáo.</p>
+<p>Chính sách của Google AdMob: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
+<h2>7. Firebase</h2>
+<p>Ứng dụng dùng các dịch vụ Firebase của Google:</p>
+<ul>
+  <li><strong>Firebase Authentication (Anonymous)</strong> — chỉ tạo một mã định danh ngẫu nhiên cho thiết bị, không thu thập email, số điện thoại, danh bạ.</li>
+  <li><strong>Firebase Cloud Functions</strong> — máy chủ trung gian gọi AI an toàn (không lưu nội dung của bạn).</li>
+  <li><strong>Firebase Crashlytics</strong> (nếu bật trong tương lai) — báo cáo sự cố ẩn danh để sửa lỗi.</li>
+</ul>
+<p>Chính sách của Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
+
+<h2>8. Thanh toán trong ứng dụng</h2>
+<p>Khi bạn mua gói Gia sư AI hoặc gói Gỡ quảng cáo, <strong>Google Play Billing</strong> xử lý thanh toán. Chúng tôi chỉ nhận xác nhận "bạn đã mua gói nào, còn hạn hay không", <strong>không nhận</strong> số thẻ hay thông tin tài chính.</p>
+
+<h2>9. Thông báo đẩy</h2>
+<p>Ứng dụng dùng thông báo cục bộ để nhắc lịch học, đưa đón, sự kiện. Bạn có thể tắt trong Cài đặt hệ thống. Ứng dụng <strong>không</strong> dùng dịch vụ push từ xa cho mục đích quảng cáo.</p>
+
+<h2>10. Chia sẻ và nhập/xuất lịch</h2>
+<p>Khi bạn bấm Chia sẻ hoặc Xuất, ứng dụng tạo nội dung lịch và gửi qua hộp thoại chia sẻ của hệ điều hành. Bạn tự chọn ứng dụng nhận (Zalo, Messenger, email...). Ứng dụng <strong>không</strong> gửi nội dung lịch lên máy chủ riêng. Mã chia sẻ lớp học giữa giáo viên — phụ huynh được giải mã hoàn toàn trên thiết bị.</p>
+
+<h2>11. Dữ liệu trẻ em</h2>
+<p>Ứng dụng có thể chứa <strong>tên con, lịch học của trẻ</strong> do phụ huynh nhập. Chúng tôi:</p>
+<ul>
+  <li><strong>Không</strong> thu thập dữ liệu trẻ em ngoài thiết bị cho mục đích khác.</li>
+  <li><strong>Không</strong> cho phép quảng cáo nhắm cá nhân tới trẻ em (chế độ an toàn đã bật).</li>
+  <li><strong>Không</strong> chia sẻ dữ liệu trẻ em với bên thứ ba ngoài các nhà cung cấp xử lý ở mục 5, 6, 7.</li>
+</ul>
+<p>Vui lòng <strong>không nhập thông tin nhạy cảm</strong> (số điện thoại, địa chỉ chi tiết, số căn cước) vào hồ sơ con.</p>
+
+<h2>12. Quyền hệ điều hành ứng dụng yêu cầu</h2>
+<ul>
+  <li><strong>Camera</strong> — để chụp ảnh thời khoá biểu / bài tập (khi bạn chủ động bấm).</li>
+  <li><strong>Internet</strong> — để gọi AI và tải quảng cáo.</li>
+  <li><strong>Thông báo (POST_NOTIFICATIONS, Android 13+)</strong> — để nhắc lịch.</li>
+  <li><strong>Khởi động lại (RECEIVE_BOOT_COMPLETED)</strong> — để khôi phục lịch nhắc sau khi điện thoại khởi động lại.</li>
+</ul>
+<p>Ứng dụng <strong>không</strong> yêu cầu các quyền nhạy cảm như: vị trí, danh bạ, lịch sử cuộc gọi, tin nhắn, microphone, đọc/ghi bộ nhớ ngoài.</p>
+
+<h2>13. Quyền của bạn</h2>
+<ul>
+  <li><strong>Xóa toàn bộ dữ liệu:</strong> vào Cài đặt &gt; Ứng dụng &gt; Thời Khoá Biểu AI &gt; Xóa dữ liệu (Android), hoặc gỡ cài đặt rồi cài lại (iOS). Vì dữ liệu chỉ ở thiết bị, gỡ ứng dụng là xóa hết.</li>
+  <li><strong>Hủy gói trả phí:</strong> vào Google Play &gt; Thanh toán &amp; gói đăng ký &gt; Đăng ký, hoặc App Store &gt; tài khoản của bạn &gt; Đăng ký.</li>
+  <li><strong>Tắt quảng cáo nhắm mục tiêu:</strong> đã tắt mặc định (do chế độ an toàn cho trẻ em). Bạn cũng có thể đặt lại Advertising ID trong Cài đặt hệ thống.</li>
+</ul>
+
+<h2>14. Lưu trữ và bảo mật</h2>
+<ul>
+  <li>Dữ liệu trên thiết bị được bảo vệ bởi cơ chế sandbox của Android/iOS.</li>
+  <li>Dữ liệu truyền lên máy chủ AI được mã hóa qua HTTPS/TLS.</li>
+  <li>Khóa API của nhà cung cấp AI nằm trong <strong>Google Secret Manager</strong>, không có trong mã nguồn ứng dụng.</li>
+  <li>Cơ sở dữ liệu Firestore của chúng tôi đã được khóa: ứng dụng không đọc/ghi trực tiếp, chỉ Cloud Functions phía máy chủ.</li>
+</ul>
+
+<h2>15. Thay đổi chính sách</h2>
+<p>Khi chính sách thay đổi, phiên bản mới sẽ được đăng tại địa chỉ công khai của chính sách này, kèm ngày cập nhật ở đầu trang. Thay đổi quan trọng sẽ được thông báo trong ứng dụng.</p>
+
+<h2>16. Liên hệ</h2>
+<ul>
+  <li><strong>Email hỗ trợ:</strong> <a href="mailto:novaxai26@gmail.com">novaxai26@gmail.com</a></li>
+  <li><strong>Nhà phát triển:</strong> Trần Thanh</li>
+  <li><strong>Quốc gia:</strong> Việt Nam</li>
+</ul>
+<p>Nếu bạn có yêu cầu xóa dữ liệu hoặc câu hỏi về quyền riêng tư, vui lòng gửi email tới địa chỉ trên. Chúng tôi sẽ phản hồi trong vòng 7 ngày làm việc.</p>
+
+<div class="footer">
+  © 2026 Thời Khoá Biểu AI · Trần Thanh · Việt Nam
+</div>
+
+</body>
+</html>
