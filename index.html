@@ -29,7 +29,7 @@
 
 <h1>Chính Sách Quyền Riêng Tư — Thời Khoá Biểu AI</h1>
 <div class="meta">
-  <div><strong>Cập nhật:</strong> 16/06/2026</div>
+  <div><strong>Cập nhật:</strong> 24/10/2026</div>
   <div><strong>Áp dụng cho:</strong> Ứng dụng Thời Khoá Biểu AI trên Google Play, App Store</div>
   <div><strong>Tên gói:</strong> <code>com.tran.thoikhoabieu</code></div>
 </div>
@@ -42,7 +42,7 @@
 <div class="summary">
 <ul>
   <li><strong>Lịch học, tên con, sự kiện, ghi chú</strong> → chỉ lưu <strong>cục bộ trên thiết bị</strong> (SQLite), không tải lên máy chủ của chúng tôi.</li>
-  <li><strong>Ảnh thời khoá biểu / bài tập</strong> → gửi cho dịch vụ AI (Alibaba Model Studio Singapore) <strong>chỉ khi bạn chủ động bấm Giải / Đọc lịch</strong>, không lưu sau khi xử lý.</li>
+  <li><strong>Ảnh thời khoá biểu / bài tập</strong> → gửi cho dịch vụ AI (Alibaba Model Studio Singapore) <strong>chỉ khi bạn chủ động bấm Giải / Đọc lịch</strong>. Nội dung bài tập bạn gửi (không kèm thông tin tài khoản) và kết quả có thể được lưu và dùng để cải thiện chất lượng Gia sư.</li>
   <li><strong>Vị trí thiết bị (GPS)</strong> → <strong>KHÔNG</strong> thu thập. Thời tiết lấy theo tỉnh/thành bạn tự chọn trong Cài đặt.</li>
   <li><strong>Quảng cáo</strong> (Google AdMob) → có hiển thị; đã ép chế độ <strong>an toàn cho trẻ em</strong> (không nhắm cá nhân, chỉ nội dung mức "G").</li>
   <li><strong>Tài khoản</strong> → ứng dụng dùng đăng nhập ẩn danh Firebase (chỉ một mã ngẫu nhiên), bạn không phải đăng ký bằng email.</li>
@@ -72,15 +72,14 @@
 <h2>4. Vị trí</h2>
 <p>Ứng dụng <strong>KHÔNG xin quyền vị trí</strong> và <strong>không truy cập GPS / IP</strong>. Thời tiết hiển thị theo <strong>tỉnh/thành bạn tự chọn</strong> trong Cài đặt (mặc định Cần Thơ; có 34 tỉnh/thành Việt Nam).</p>
 
-<h2>5. Dịch vụ AI (Alibaba Model Studio Singapore)</h2>
-<p>Khi bạn dùng các tính năng có AI (Gia sư AI, AI đọc lịch khi OCR thất bại), ứng dụng gửi nội dung sau qua máy chủ Firebase Cloud Functions của chúng tôi (khu vực Singapore), rồi chuyển tiếp đến <strong>Alibaba Model Studio (máy chủ Singapore)</strong>:</p>
+<h2>5. Dịch vụ AI (Alibaba Cloud – Qwen, máy chủ Singapore)</h2>
+<p>Khi bạn dùng các tính năng có AI (Gia sư AI, AI đọc lịch khi OCR thất bại), ứng dụng gửi nội dung sau qua máy chủ Firebase Cloud Functions của chúng tôi (khu vực Singapore), rồi chuyển tiếp đến <strong>Alibaba Cloud – Qwen (Alibaba Model Studio, máy chủ Singapore)</strong>:</p>
 <ul>
   <li>Văn bản đề bài bạn gõ vào, hoặc</li>
   <li>Ảnh/PDF bạn đã chủ động chọn để giải.</li>
 </ul>
 <p><strong>Cam kết của Alibaba Model Studio Singapore:</strong> không sử dụng dữ liệu API để huấn luyện mô hình. Chi tiết: <a href="https://www.alibabacloud.com/help/en/model-studio/">https://www.alibabacloud.com/help/en/model-studio/</a>.</p>
-<p>Dự phòng khi Alibaba lỗi tạm thời, ứng dụng có thể chuyển yêu cầu sang <strong>OpenAI (GPT-4o-mini)</strong>. OpenAI cũng không dùng dữ liệu API để huấn luyện: <a href="https://openai.com/policies/api-data-usage-policies">https://openai.com/policies/api-data-usage-policies</a>.</p>
-<p>Chúng tôi <strong>không lưu lâu dài</strong> nội dung bạn gửi cho AI; chỉ ghi log kỹ thuật ẩn danh (tổng số ký tự, mã định danh phiên) trong 30 ngày để chống lạm dụng.</p>
+<p>Nội dung bài tập bạn gửi (không kèm thông tin tài khoản) và kết quả có thể được lưu và dùng để cải thiện chất lượng Gia sư. Ngoài ra chúng tôi ghi log kỹ thuật ẩn danh (tổng số ký tự, mã định danh phiên) trong 30 ngày để chống lạm dụng. Chỉ nội dung bài tập được chuyển cho dịch vụ AI; thông tin tài khoản không được chuyển.</p>
 
 <h2>6. Quảng cáo (Google AdMob)</h2>
 <p>Ứng dụng có hiển thị quảng cáo banner (đáy màn hình Lịch) và quảng cáo toàn màn hình thỉnh thoảng (sau khi giải xong bài tập). SDK Google AdMob có thể xử lý:</p>
@@ -97,7 +96,7 @@
 <p>Ứng dụng dùng các dịch vụ Firebase của Google:</p>
 <ul>
   <li><strong>Firebase Authentication (Anonymous)</strong> — chỉ tạo một mã định danh ngẫu nhiên cho thiết bị, không thu thập email, số điện thoại, danh bạ.</li>
-  <li><strong>Firebase Cloud Functions</strong> — máy chủ trung gian gọi AI an toàn (không lưu nội dung của bạn).</li>
+  <li><strong>Firebase Cloud Functions</strong> — máy chủ trung gian gọi AI an toàn (chuyển tiếp nội dung bài tập, không kèm thông tin tài khoản).</li>
   <li><strong>Firebase Crashlytics</strong> (nếu bật trong tương lai) — báo cáo sự cố ẩn danh để sửa lỗi.</li>
 </ul>
 <p>Chính sách của Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
