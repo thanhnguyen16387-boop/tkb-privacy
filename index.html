@@ -29,8 +29,8 @@
 
 <h1>Chính Sách Quyền Riêng Tư — Thời Khoá Biểu AI</h1>
 <div class="meta">
-  <div><strong>Cập nhật:</strong> 24/10/2026</div>
-  <div><strong>Áp dụng cho:</strong> Ứng dụng Thời Khoá Biểu AI trên Google Play, App Store</div>
+  <div><strong>Cập nhật:</strong> 26/10/2026</div>
+  <div><strong>Áp dụng cho:</strong> Ứng dụng Thời Khoá Biểu AI trên Android và iOS</div>
   <div><strong>Tên gói:</strong> <code>com.tran.thoikhoabieu</code></div>
 </div>
 
@@ -41,11 +41,11 @@
 <h2>1. Tóm tắt nhanh</h2>
 <div class="summary">
 <ul>
-  <li><strong>Lịch học, tên con, sự kiện, ghi chú</strong> → chỉ lưu <strong>cục bộ trên thiết bị</strong> (SQLite), không tải lên máy chủ của chúng tôi.</li>
+  <li><strong>Lịch học, tên con, sự kiện, ghi chú</strong> → lưu <strong>cục bộ trên thiết bị</strong> (SQLite), không tải lên máy chủ của chúng tôi.</li>
   <li><strong>Ảnh thời khoá biểu / bài tập</strong> → gửi cho dịch vụ AI (Alibaba Model Studio Singapore) <strong>chỉ khi bạn chủ động bấm Giải / Đọc lịch</strong>. Nội dung bài tập bạn gửi (không kèm thông tin tài khoản) và kết quả có thể được lưu và dùng để cải thiện chất lượng Gia sư.</li>
   <li><strong>Vị trí thiết bị (GPS)</strong> → <strong>KHÔNG</strong> thu thập. Thời tiết lấy theo tỉnh/thành bạn tự chọn trong Cài đặt.</li>
-  <li><strong>Quảng cáo</strong> (Google AdMob) → có hiển thị; đã ép chế độ <strong>an toàn cho trẻ em</strong> (không nhắm cá nhân, chỉ nội dung mức "G").</li>
-  <li><strong>Tài khoản</strong> → ứng dụng dùng đăng nhập ẩn danh Firebase (chỉ một mã ngẫu nhiên), bạn không phải đăng ký bằng email.</li>
+  <li><strong>Quảng cáo và thanh toán</strong> → hiện <strong>chưa có</strong> trong ứng dụng. Nếu bổ sung, chính sách này sẽ được cập nhật trước.</li>
+  <li><strong>Tài khoản</strong> → đăng nhập bằng Google, Apple hoặc email. Email, tên hiển thị và vai trò được lưu trên máy chủ Firebase của chúng tôi. Lớp học bạn tạo hoặc tham gia (nếu dùng) cũng lưu trên máy chủ.</li>
 </ul>
 </div>
 
@@ -81,31 +81,22 @@
 <p><strong>Cam kết của Alibaba Model Studio Singapore:</strong> không sử dụng dữ liệu API để huấn luyện mô hình. Chi tiết: <a href="https://www.alibabacloud.com/help/en/model-studio/">https://www.alibabacloud.com/help/en/model-studio/</a>.</p>
 <p>Nội dung bài tập bạn gửi (không kèm thông tin tài khoản) và kết quả có thể được lưu và dùng để cải thiện chất lượng Gia sư. Ngoài ra chúng tôi ghi log kỹ thuật ẩn danh (tổng số ký tự, mã định danh phiên) trong 30 ngày để chống lạm dụng. Chỉ nội dung bài tập được chuyển cho dịch vụ AI; thông tin tài khoản không được chuyển.</p>
 
-<h2>6. Quảng cáo (Google AdMob)</h2>
-<p>Ứng dụng có hiển thị quảng cáo banner (đáy màn hình Lịch) và quảng cáo toàn màn hình thỉnh thoảng (sau khi giải xong bài tập). SDK Google AdMob có thể xử lý:</p>
-<ul>
-  <li>Mã định danh quảng cáo (Advertising ID) của thiết bị.</li>
-  <li>Dữ liệu chẩn đoán cơ bản (model thiết bị, phiên bản hệ điều hành).</li>
-  <li>Dữ liệu tương tác với quảng cáo (xem / bấm).</li>
-</ul>
-<p><strong>Chế độ an toàn cho trẻ em:</strong> chúng tôi đã đánh dấu ứng dụng là "hướng đến đối tượng có trẻ em" (<code>tagForChildDirectedTreatment = true</code>, <code>maxAdContentRating = G</code>), nên quảng cáo <strong>không</strong> được nhắm theo hồ sơ cá nhân.</p>
-<p>Người dùng đã mua gói trả phí (Gia sư AI hàng tháng/quý/năm) hoặc gói "Gỡ quảng cáo" sẽ <strong>không</strong> thấy quảng cáo.</p>
-<p>Chính sách của Google AdMob: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
-
+<h2>6. Quảng cáo</h2>
+<p>Hiện ứng dụng <strong>không hiển thị quảng cáo</strong> và không dùng mã định danh quảng cáo. Nếu sau này bổ sung quảng cáo, chúng tôi sẽ cập nhật chính sách này trước khi bật.</p>
 <h2>7. Firebase</h2>
 <p>Ứng dụng dùng các dịch vụ Firebase của Google:</p>
 <ul>
-  <li><strong>Firebase Authentication (Anonymous)</strong> — chỉ tạo một mã định danh ngẫu nhiên cho thiết bị, không thu thập email, số điện thoại, danh bạ.</li>
+  <li><strong>Firebase Authentication</strong> — đăng nhập bằng Google, Apple hoặc email; lưu email, tên hiển thị và mã định danh tài khoản. Không thu thập số điện thoại, danh bạ.</li>
   <li><strong>Firebase Cloud Functions</strong> — máy chủ trung gian gọi AI an toàn (chuyển tiếp nội dung bài tập, không kèm thông tin tài khoản).</li>
   <li><strong>Firebase Crashlytics</strong> (nếu bật trong tương lai) — báo cáo sự cố ẩn danh để sửa lỗi.</li>
 </ul>
 <p>Chính sách của Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
 
-<h2>8. Thanh toán trong ứng dụng</h2>
-<p>Khi bạn mua gói Gia sư AI hoặc gói Gỡ quảng cáo, <strong>Google Play Billing</strong> xử lý thanh toán. Chúng tôi chỉ nhận xác nhận "bạn đã mua gói nào, còn hạn hay không", <strong>không nhận</strong> số thẻ hay thông tin tài chính.</p>
+<h2>8. Thanh toán</h2>
+<p>Hiện ứng dụng <strong>chưa có thanh toán</strong>. Nếu sau này bổ sung gói trả phí, chúng tôi sẽ cập nhật chính sách này trước khi bật. Chúng tôi sẽ không nhận số thẻ hay thông tin tài chính của bạn.</p>
 
 <h2>9. Thông báo đẩy</h2>
-<p>Ứng dụng dùng thông báo cục bộ để nhắc lịch học, đưa đón, sự kiện. Bạn có thể tắt trong Cài đặt hệ thống. Ứng dụng <strong>không</strong> dùng dịch vụ push từ xa cho mục đích quảng cáo.</p>
+<p>Ứng dụng dùng thông báo cục bộ để nhắc lịch học, đưa đón, sự kiện. Trên iOS 26, ứng dụng dùng báo thức để nhắc giờ đón con. Bạn có thể tắt trong Cài đặt hệ thống. Ứng dụng <strong>không</strong> dùng dịch vụ push từ xa cho mục đích quảng cáo.</p>
 
 <h2>10. Chia sẻ và nhập/xuất lịch</h2>
 <p>Khi bạn bấm Chia sẻ hoặc Xuất, ứng dụng tạo nội dung lịch và gửi qua hộp thoại chia sẻ của hệ điều hành. Bạn tự chọn ứng dụng nhận (Zalo, Messenger, email...). Ứng dụng <strong>không</strong> gửi nội dung lịch lên máy chủ riêng. Mã chia sẻ lớp học giữa giáo viên — phụ huynh được giải mã hoàn toàn trên thiết bị.</p>
@@ -114,25 +105,25 @@
 <p>Ứng dụng có thể chứa <strong>tên con, lịch học của trẻ</strong> do phụ huynh nhập. Chúng tôi:</p>
 <ul>
   <li><strong>Không</strong> thu thập dữ liệu trẻ em ngoài thiết bị cho mục đích khác.</li>
-  <li><strong>Không</strong> cho phép quảng cáo nhắm cá nhân tới trẻ em (chế độ an toàn đã bật).</li>
-  <li><strong>Không</strong> chia sẻ dữ liệu trẻ em với bên thứ ba ngoài các nhà cung cấp xử lý ở mục 5, 6, 7.</li>
+  <li><strong>Không</strong> hiển thị quảng cáo trong ứng dụng.</li>
+  <li><strong>Không</strong> chia sẻ dữ liệu trẻ em với bên thứ ba ngoài các nhà cung cấp xử lý ở mục 5 và 7.</li>
 </ul>
 <p>Vui lòng <strong>không nhập thông tin nhạy cảm</strong> (số điện thoại, địa chỉ chi tiết, số căn cước) vào hồ sơ con.</p>
 
 <h2>12. Quyền hệ điều hành ứng dụng yêu cầu</h2>
 <ul>
   <li><strong>Camera</strong> — để chụp ảnh thời khoá biểu / bài tập (khi bạn chủ động bấm).</li>
-  <li><strong>Internet</strong> — để gọi AI và tải quảng cáo.</li>
-  <li><strong>Thông báo (POST_NOTIFICATIONS, Android 13+)</strong> — để nhắc lịch.</li>
-  <li><strong>Khởi động lại (RECEIVE_BOOT_COMPLETED)</strong> — để khôi phục lịch nhắc sau khi điện thoại khởi động lại.</li>
+  <li><strong>Internet</strong> — để đăng nhập, đồng bộ tài khoản và gọi AI.</li>
+  <li><strong>Thông báo</strong> (Android 13+ và iOS) — để nhắc lịch.</li>
+  <li><strong>Thư viện ảnh</strong> (iOS) — chỉ khi bạn chủ động chọn ảnh thời khoá biểu, đề bài hoặc bài làm.</li>
+  <li><strong>Báo thức</strong> (iOS 26) — để nhắc giờ đón con.</li>
+  <li><strong>Khởi động lại (RECEIVE_BOOT_COMPLETED, Android)</strong> — để khôi phục lịch nhắc sau khi điện thoại khởi động lại.</li>
 </ul>
 <p>Ứng dụng <strong>không</strong> yêu cầu các quyền nhạy cảm như: vị trí, danh bạ, lịch sử cuộc gọi, tin nhắn, microphone, đọc/ghi bộ nhớ ngoài.</p>
 
 <h2>13. Quyền của bạn</h2>
 <ul>
-  <li><strong>Xóa toàn bộ dữ liệu:</strong> vào Cài đặt &gt; Ứng dụng &gt; Thời Khoá Biểu AI &gt; Xóa dữ liệu (Android), hoặc gỡ cài đặt rồi cài lại (iOS). Vì dữ liệu chỉ ở thiết bị, gỡ ứng dụng là xóa hết.</li>
-  <li><strong>Hủy gói trả phí:</strong> vào Google Play &gt; Thanh toán &amp; gói đăng ký &gt; Đăng ký, hoặc App Store &gt; tài khoản của bạn &gt; Đăng ký.</li>
-  <li><strong>Tắt quảng cáo nhắm mục tiêu:</strong> đã tắt mặc định (do chế độ an toàn cho trẻ em). Bạn cũng có thể đặt lại Advertising ID trong Cài đặt hệ thống.</li>
+  <li><strong>Xóa tài khoản và dữ liệu:</strong> vào Hồ sơ cá nhân &gt; Xóa tài khoản và dữ liệu (Android và iOS). Thao tác này xóa hồ sơ và dữ liệu của bạn trên máy chủ. Dữ liệu lưu trên thiết bị được xóa khi bạn gỡ ứng dụng.</li>
 </ul>
 
 <h2>14. Lưu trữ và bảo mật</h2>
